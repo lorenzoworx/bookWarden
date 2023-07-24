@@ -1,40 +1,9 @@
 <a name="readme-top"></a>
 
-<!--
-!!! IMPORTANT !!!
-This README is an example of how you could professionally present your codebase. 
-Writing documentation is a crucial part of your work as a professional software developer and cannot be ignored. 
-
-You should modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
-
-For more information on the importance of a professional README for your repositories: https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/readme_best_practices.md
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
+  <h1>
+    <b>Book Warden</b>
+  </h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -63,36 +32,33 @@ For more information on the importance of a professional README for your reposit
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Book Warden <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**Book Warden** is a comprehensive library management tool designed to streamline the process of recording, organizing, and tracking books and borrowers in a library setting. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>Ruby</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li>N/A</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li>N/A</li>
   </ul>
 </details>
 
@@ -100,11 +66,8 @@ For more information on the importance of a professional README for your reposit
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Library Management**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,9 +75,7 @@ For more information on the importance of a professional README for your reposit
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+**Live Demo is unavailable**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,13 +83,11 @@ For more information on the importance of a professional README for your reposit
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need: a modern web-browser
 
 <!--
 Example command:
@@ -140,7 +99,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this [repository](https://github.com/lorenzoworx/bookWarden.git) to your desired folder
 
 <!--
 Example commands:
@@ -153,8 +112,7 @@ Example commands:
 
 ### Install
 
-Install this project with:
-
+This project does not require installation
 <!--
 Example command:
 
@@ -166,7 +124,9 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project:
+ - Clone this [repository](https://github.com/lorenzoworx/bookWarden.git)
+ - run `ruby <file_name>.rb`
 
 <!--
 Example command:
@@ -178,7 +138,7 @@ Example command:
 
 ### Run tests
 
-To run tests, run the following command:
+**Tests are unavailable**
 
 <!--
 Example command:
@@ -190,8 +150,7 @@ Example command:
 
 ### Deployment
 
-You can deploy this project using:
-
+**Deployment is unavailable**
 <!--
 Example:
 
@@ -206,19 +165,13 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Okolo Oshoke**
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@lorenzoworx](https://github.com/lorenzoworx)
+- Twitter: [@lorenzoworx](https://twitter.com/lorenzoworx)
+- LinkedIn: [Oshoke Okolo](https://www.linkedin.com/in/oshokeokolo/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +181,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Books management**
+- [ ] **Rental management**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -248,9 +200,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project, show your support by leaving a star '⭐️' and following me. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,9 +209,8 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank microverse for making this possible by providing the curriculum and the support needed to complete this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -268,15 +218,10 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **Can I use this project?**
 
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+  - It has an MIT license. Feel free to use it as you like
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -286,6 +231,5 @@ I would like to thank...
 
 This project is [MIT](./MIT) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
