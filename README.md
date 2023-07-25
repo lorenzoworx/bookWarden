@@ -170,7 +170,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 - [ ] **Books management**
 - [ ] **Rental management**
 
