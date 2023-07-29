@@ -94,24 +94,33 @@ class App
     end
   end
 
-  def create_person
+  def person_option
     puts 'Do you want to create a student(1) or a teacher(2)? [Input the number]: '
-    option = gets.chomp.to_i
+    gets.chomp.to_i
+  end
 
-    parent_permission = true
+  def person_age
+    puts 'Age:'
+    gets.chomp.to_i
+  end
 
-    puts 'age:'
-    age = gets.chomp.to_i
+  def person_name
+    puts 'Name: '
+    gets.chomp
+  end
 
-    puts 'name: '
-    name = gets.chomp
-
+  def person_parent_permission
     puts 'Has parent permission? [Y/N]'
-    permission_value = gets.chomp
+    %w[N n NO no No].include?(gets.chomp)
+  end
 
-    parent_permission = false if %w[N n NO no No].include?(permission_value)
+  def create_person
+    option = person_option
+    name = person_name
+    age = person_age
+    parent_permission = !person_parent_permission
+
     puts "Option: #{option}, Name: #{name}, Age: #{age}, Parent Permission: #{parent_permission}"
-
 
     case option
     when 1
