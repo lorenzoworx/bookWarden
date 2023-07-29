@@ -19,7 +19,7 @@ class App
   def list_people
     puts 'List of People: '
     @people.each do |person|
-      puts "[#{people.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
+      puts "[#{person.class.name}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
   end
 
