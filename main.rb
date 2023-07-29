@@ -11,37 +11,6 @@ def list_option
   puts '7 - Exit'
 end
 
-def create_person(app)
-  puts 'Do you want to create a student(1) or a teacher(2)? [Input the number]: '
-  option = gets.chomp
-
-  parent_permission = true
-
-  puts 'age:'
-  age = gets.chomp.to_i
-
-  puts 'name: '
-  name = gets.chomp
-
-  puts 'Has parent permission? [Y/N]'
-  permission_value = gets.chomp
-
-  parent_permission = false if %w[N n NO no No].include?(permission_value)
-
-  case option.to_i
-
-  when 1
-    app.create_student(name, age, parent_permission)
-
-  when 2
-    puts 'Specialization: '
-    specialization = gets.chomp
-    app.create_teacher(name, age, parent_permission, specialization)
-  else
-    puts 'Invalid input :( '
-  end
-end
-
 def handle_selection(option, app)
   case option.to_i
 
