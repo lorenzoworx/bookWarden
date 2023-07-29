@@ -46,7 +46,7 @@ class App
 
   def validate_id(id, collection_name, collection)
     if collection.empty?
-      puts 'The #{collection_name} collection is empty. Add some #{collecton_name}s.'
+      puts "The #{collection_name} collection is empty. Add some #{collecton_name}s."
       return nil
     end
 
