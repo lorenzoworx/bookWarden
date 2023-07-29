@@ -24,7 +24,8 @@ class App
   end
 
   def create_student(name, age, parent_permission)
-    @people.push(Student.new(age: age, name: name, parent_permission: parent_permission))
+    student = Student.new(name: name, age: age, parent_permission: parent_permission, classroom: nil)
+    @people.push(student)
     puts 'Student successfully created'
   end
 
@@ -90,6 +91,37 @@ class App
               puts "Date: #{rental.date}, #{rental.book.title} by #{rental.book.author}"
             end
           )
+    end
+  end
+
+  def create_person
+    puts 'Do you want to create a student(1) or a teacher(2)? [Input the number]: '
+    option = gets.chomp.to_i
+
+    parent_permission = true
+
+    puts 'age:'
+    age = gets.chomp.to_i
+
+    puts 'name: '
+    name = gets.chomp
+
+    puts 'Has parent permission? [Y/N]'
+    permission_value = gets.chomp
+
+    parent_permission = false if %w[N n NO no No].include?(permission_value)
+    puts "Option: #{option}, Name: #{name}, Age: #{age}, Parent Permission: #{parent_permission}"
+
+
+    case option
+    when 1
+      create_student(name, age, parent_permission)
+    when 2
+      puts 'Specialization: '
+      specialization = gets.chomp
+      create_teacher(name, age, specialization)
+    else
+      puts 'Invalid input :( '
     end
   end
 end
